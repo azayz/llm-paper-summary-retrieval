@@ -1,4 +1,4 @@
-# LLM Project (Summarize And retrieve Papers)
+# LLM Project (Summarize And Retrieve Papers)
 
 ## Setup
 
@@ -15,7 +15,7 @@ wget https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7
 How to Run the summarization script
 
 `
-python3 instadeep_llm_test/summarization.py --file_path <path_to_pdf> --model_path <path_to_model> --verbose <whether to see complete logs or not>
+python3 llm-project/summarization.py --file_path <path_to_pdf> --model_path <path_to_model> --verbose <whether to see complete logs or not>
 `
 
 ![image](assets/summarize_results.png)
@@ -25,7 +25,7 @@ python3 instadeep_llm_test/summarization.py --file_path <path_to_pdf> --model_pa
 How to Run the retrieve top 3 papers script
 
 `
-python3 instadeep_llm_test/retrieve.py --query <query> --model_name <sentence_embedding_model> --verbose <whether to see complete logs or not> --top_k <number of papers to retrieve> --data_path <path to the data>
+python3 llm-project/retrieve.py --query <query> --model_name <sentence_embedding_model> --verbose <whether to see complete logs or not> --top_k <number of papers to retrieve> --data_path <path to the data>
 `
 
 ![image](assets/retrieve_results.png)
@@ -38,7 +38,7 @@ summary or the retrieved papers are relevant to the query.
 To evaluate results for both summarization and retrieval, run the following command:
 
 `
-python3 instadeep_llm_test/evaluate.py --model_result <model's output> --ground_truth <ground truth> 
+python3 llm-project/evaluate.py --model_result <model's output> --ground_truth <ground truth> 
 `
 
 ![image](assets/evaluation_results.png)
