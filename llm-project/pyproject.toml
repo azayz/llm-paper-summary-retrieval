@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "instadeep-llm"
+version = "0.1.0"
+description = ""
+authors = ["azayz <azizbellaweid@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "instadeep_llm"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.340"
+chromadb = "^0.4.18"
+llama-cpp-python = "^0.2.19"
+rouge = "^1.0.1"
+bert-score = "^0.3.13"
+argparse = "^1.4.0"
+sentence-transformers="^2.2.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
